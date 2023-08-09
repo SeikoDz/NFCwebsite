@@ -1,0 +1,1097 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.JPG);
+    background-position: center;
+    background-size: cover;
+    scroll-margin: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+    top: -70px;
+    right: 90px;
+    position: relative;
+    animation: fade-down 0.7s;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    top: -80px;
+    left: 80px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: fade-down 1s;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+    box-shadow: 0 0 7px goldenrod;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50);
+    top: auto;
+    text-align: center;
+    color: whitesmoke;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid goldenrod;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    bottom: -8px;
+    box-shadow: 0 0 5px goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fade-up 1s;
+}
+
+span {
+    background: goldenrod;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1.3s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    transition: 0.7s;
+    border: none;
+    box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod, 0 0 100px goldenrod;
+}
+
+.link {
+    color: goldenrod;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    animation: fade-up 1s;
+}
+
+.text {
+    color: white;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    bottom: 0px;
+    animation: fade-up 0.7s;
+}
+
+.input {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid goldenrod;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 5px goldenrod;
+    animation: fade-up 0.7s;
+}
+
+.p {
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    bottom: -10px;
+    animation: fade-up 1.3s;
+}
+
+.gold {
+    color: rgb(238, 179, 30);
+    animation: fade-up 0.7s;
+}
+
+.form {
+    background: transparent;
+}
+
+.header {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    animation: fade-down 0.7s;
+}
+
+.head {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    position: relative;
+    top: 350px;
+    text-align: center;
+}
+
+.t {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    text-align: center;
+    bottom: -350px;
+    font-size: 25px;
+}
+
+.banner2 {
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.JPG);
+    background-position: center;
+    background-size: cover;
+    scroll-margin: 1;
+    bottom: -400px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.head2 {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    position: relative;
+    top: -850px;
+    text-align: center;
+}
+
+.player {
+    position: relative;
+    cursor: pointer;
+    top: -850px;
+    left: 25px;
+    border-radius: 20px;
+    border: 5px solid white;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.design {
+    position: relative;
+    cursor: pointer;
+    top: -850px;
+    left: 35px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+
+.edit {
+    position: relative;
+    cursor: pointer;
+    top: -850px;
+    left: 45px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+
+.creator {
+    position: relative;
+    cursor: pointer;
+    top: -838px;
+    left: 460px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+
+.player:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.design:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.edit:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.creator:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.logo2 {
+    width: 150px;
+    position: relative;
+    animation: fade-down 0.7s;
+    left: 20px;
+    top: -20px;
+}
+
+.line {
+    position: relative;
+    left: 20px;
+    top: -70px;
+    background-size: cover;
+    color: goldenrod;
+}
+
+.line2 {
+    position: relative;
+    left: 20px;
+    top: -5px;
+    background-size: cover;
+    color: goldenrod;
+}
+
+.down {
+    color: rgb(189, 189, 189);
+    top: -70px;
+    position: relative;
+    left: 20px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.down2 {
+    color: rgb(189, 189, 189);
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.down3 {
+    color: rgb(189, 189, 189);
+    position: relative;
+    left: 20px;
+    top: -40px;
+    bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner3 {
+    width: 100%;
+    height: 380px;
+    background-color: rgb(36, 36, 36);
+    background-position: center;
+    background-size: cover;
+    scroll-margin: 1;
+    position: relative;
+    top: -380px;
+    background-attachment: fixed;
+}
+
+.header2 {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center;
+    animation: fade-down 0.7s;
+    top: -750px;
+    position: relative;
+}
+
+.button {
+    top: -600px;
+    text-align: center;
+    color: black;
+    left: 555px;
+    position: relative;
+}
+
+.note {
+    position: relative;
+    color: black;
+    bottom: 725px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+.img {
+    height: 45px;
+    width: 45px;
+    position: relative;
+    cursor: pointer;
+    top: -80px;
+    left: 120px;
+}
+
+.img2 {
+    height: 45px;
+    width: 45px;
+    position: relative;
+    cursor: pointer;
+    top: -80px;
+    left: 120px;
+}
+
+.img3 {
+    height: 45px;
+    width: 45px;
+    position: relative;
+    cursor: pointer;
+    top: -80px;
+    left: 120px;
+}
+
+.img4 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    top: -76px;
+    left: 120px;
+}
+
+.player1 {
+    position: relative;
+    cursor: pointer;
+    top: -700px;
+    left: 25px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.design1 {
+    position: relative;
+    cursor: pointer;
+    top: -700px;
+    left: 35px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.edit1 {
+    position: relative;
+    cursor: pointer;
+    top: -700px;
+    left: 45px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.creator1 {
+    position: relative;
+    cursor: pointer;
+    top: -688px;
+    left: 460px;
+    border-radius: 20px;
+    bottom: -500px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.player1:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.design1:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+    box-shadow: 0 0 5px lightseagreen, 0 0 25px lightseagreen, 0 0 50px lightseagreen;
+}
+
+.edit1:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+    box-shadow: 0 0 5px gray, 0 0 25px gray, 0 0 50px gray;
+}
+
+.creator1:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+    box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: goldenrod;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.design:focus-visible {
+    animation: fade-up 0.5s;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gold;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(150, 150, 150);
+    width: 5px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    white-space: normal;
+}
+
+.player2 {
+    position: relative;
+    cursor: pointer;
+    top: -1350px;
+    left: 30px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.design2 {
+    position: relative;
+    cursor: pointer;
+    top: -1350px;
+    left: 40px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.edit2 {
+    position: relative;
+    cursor: pointer;
+    top: -1350px;
+    left: 50px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.creator2 {
+    position: relative;
+    cursor: pointer;
+    top: -1337px;
+    left: 465px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.player2:hover {
+    scale: 1.05;
+}
+
+.design2:hover {
+    scale: 1.05;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.edit2:hover {
+    transition: 0.5s;
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.creator2:hover {
+    transition: 0.5s;
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.header3 {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center;
+    animation: fade-down 0.7s;
+    top: -1000px;
+    position: relative;
+}
+
+.note2 {
+    position: relative;
+    color: black;
+    bottom: 950px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    animation: fade-down 0.7s;
+}
+
+.banner4 {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.JPG);
+    background-position: center;
+    background-size: cover;
+    scroll-margin: 1;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.player3 {
+    position: relative;
+    cursor: pointer;
+    top: -900px;
+    left: 25px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.design3 {
+    position: relative;
+    cursor: pointer;
+    top: -900px;
+    left: 35px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.edit3 {
+    position: relative;
+    cursor: pointer;
+    top: -900px;
+    left: 45px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.creator3 {
+    position: relative;
+    cursor: pointer;
+    top: -888px;
+    left: 460px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.player3:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.design3:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.edit3:hover {
+    transition: 0.5s;
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.creator3:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.t5 {
+    color: goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    text-align: center;
+    bottom: 400px;
+    font-size: 30px;
+    animation: fade-down 0.7s;
+}
+
+.design5 {
+    position: relative;
+    cursor: pointer;
+    top: -550px;
+    left: 420px;
+    border-radius: 20px;
+    border: 5px solid white;
+    animation: fade-down 0.7s;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.design5:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.player6 {
+    position: relative;
+    cursor: pointer;
+    top: -400px;
+    left: 25px;
+    border-radius: 20px;
+    border: 5px solid white;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.design6 {
+    position: relative;
+    cursor: pointer;
+    top: -400px;
+    left: 35px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.edit6 {
+    position: relative;
+    cursor: pointer;
+    top: -400px;
+    left: 45px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.creator6 {
+    position: relative;
+    cursor: pointer;
+    top: -388px;
+    left: 460px;
+    border-radius: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.player6:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.design6:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.edit6:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.creator6:hover {
+    scale: 1.05;
+    transition-delay: 0.1s;
+}
+
+.header6 {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center;
+    animation: fade-down 0.7s;
+    top: -500px;
+    position: relative;
+}
+
+.note6 {
+    position: relative;
+    color: black;
+    bottom: 450px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    animation: fade-down 0.7s;
+}
+
+.head5 {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center;
+    animation: fade-down 0.7s;
+    position: relative;
+}
+
+.clan {
+    position: relative;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    animation: fade-down 0.7s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.link5 {
+    color: goldenrod;
+    cursor: pointer;
+    position: relative;
+    bottom: 350px;
+    left: 555px;
+    animation: fade-up 1s;
+}
+
+.image {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    size: 0px;
+    top: -850px;
+    left: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image img {
+    transition: 0.5s;
+    filter: brightness(50%);
+    padding: 6px;
+}
+
+.image img:hover {
+    scale: 1.05;
+    filter: brightness(100%);
+}
+
+.image2 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    cursor: pointer;
+    top: -850px;
+    left: 469px;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image2 img {
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.image2 img:hover {
+    scale: 1.03;
+    filter: brightness(100%);
+}
+
+.image:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+.image2:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+.image3 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    size: 0px;
+    top: -1200px;
+    left: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image3 img {
+    transition: 0.5s;
+    filter: brightness(50%);
+    padding: 6px;
+}
+
+.image3 img:hover {
+    scale: 1.05;
+    filter: brightness(100%);
+}
+
+.image4 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    cursor: pointer;
+    top: -1190px;
+    left: 469px;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image4 img {
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.image4 img:hover {
+    scale: 1.03;
+    filter: brightness(100%);
+}
+
+.image3:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+.image4:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.image5 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    size: 0px;
+    top: -700px;
+    left: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image5 img {
+    transition: 0.5s;
+    filter: brightness(50%);
+    padding: 6px;
+}
+
+.image5 img:hover {
+    scale: 1.05;
+    filter: brightness(100%);
+}
+
+.image6 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    cursor: pointer;
+    top: -695px;
+    left: 469px;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image6 img {
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.image6 img:hover {
+    scale: 1.03;
+    filter: brightness(100%);
+}
+
+.image5:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+.image6:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+.image7 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    size: 0px;
+    top: -450px;
+    left: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image7 img {
+    transition: 0.5s;
+    filter: brightness(50%);
+    padding: 6px;
+}
+
+.image7 img:hover {
+    scale: 1.05;
+    filter: brightness(100%);
+}
+
+.image8 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 512px;
+    cursor: pointer;
+    top: -440px;
+    left: 469px;
+    transition: 0.5s;
+    box-shadow: 0, 0, 0;
+}
+
+.image8 img {
+    transition: 0.5s;
+    filter: brightness(50%);
+}
+
+.image8 img:hover {
+    scale: 1.03;
+    filter: brightness(100%);
+}
+
+.image7:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+.image8:hover {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod;
+}
+
+.gform {
+    position: relative;
+    top: -370px;
+    left: 325px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner9 {
+    width: 100%;
+    height: 380px;
+    background-color: rgb(36, 36, 36);
+    background-position: center;
+    background-size: cover;
+    scroll-margin: 1;
+    position: relative;
+    top: 800px;
+    background-attachment: fixed;
+}
+
+.header9 {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center;
+    animation: fade-down 0.7s;
+    top: 450px;
+    position: relative;
+}
+
+.note9 {
+    position: relative;
+    color: black;
+    bottom: -500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    animation: fade-down 0.7s;
+}
